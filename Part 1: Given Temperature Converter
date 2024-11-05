@@ -1,0 +1,17 @@
+//  Part 1: Temperature Converter
+#include <iostream>
+using namespace std;
+float celToFahren (float celsius);
+
+int main() {
+    float tempC, tempF;
+    
+    cout << "\n Enter temperature in C: ";
+    cin >> tempC;
+    
+    tempF = celToFahren (tempC);
+    cout << "\n Tempepature in F: " << tempF;
+}
+float celToFahren(float celsius){
+    return (celsius * (9.0f/5.0f)) + 32.0f;
+}
